@@ -57,11 +57,11 @@
 		height:1%;
 	}
 	a:link, a:visited {
-		color: #a3030f;
+		color:#ccc;
 		text-decoration: none;
 	}
 	a:hover {
-		color:#ccc;
+		color: #a3030f;
 	}
 
 	.content {
@@ -79,13 +79,14 @@
 	Night Verses
 	*/
 
-	.nightverses-splash {
+	.nv-splash {
 		width: 100%;
 	}
 
-	.nightverses-splash .nigthverses-promo {
+	.nv-splash .nv-promo {
 		width: 100%;
-		height: 430px;
+		height: 144px;
+		padding: 286px 0 0 0;
 		background-image: url("../imgs/img-nightverses.jpg");
 		background-repeat: no-repeat;
 		background-color: #ccc;
@@ -94,13 +95,22 @@
 		-o-background-size: 960px;
 		background-size: 960px;
 		background-position: center top;
+		text-align: center;
 	}
 
-	.nightverses-bio {
+	.nv-bio {
+		height: 100%;
 		margin: 0 auto;
-		max-width: 960px;
+		padding: 10px 0 0 0;
+		max-width: 900px;
 		font-size: 24px;
-		line-height: 1.75em;
+		line-height: 2em;
+		letter-spacing: 1px;
+	}
+
+	.nv-bio .social-links {
+		padding: 0;
+		text-align: center;
 	}
 
 	/*
