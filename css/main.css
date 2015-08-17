@@ -73,55 +73,112 @@
 	.main {
 		width: 100%;
 		background-color: #000;
+		padding-bottom: 30px;
 	}
 
 	/*
-	Night Verses
+	Main Styles
 	*/
 
-	.nv-splash {
-		width: 100%;
-	}
-
-	.nv-splash .nv-promo {
-		width: 100%;
-		height: 144px;
-		padding: 286px 0 0 0;
-		background-image: url("../imgs/img-nightverses.jpg");
-		background-repeat: no-repeat;
-		background-color: #ccc;
-		-webkit-background-size: 960px;
-		-moz-background-size: 960px;
-		-o-background-size: 960px;
-		background-size: 960px;
-		background-position: center top;
-		text-align: center;
-	}
-
-	.nv-bio {
-		height: 100%;
+	.main .hero {
 		margin: 0 auto;
-		padding: 10px 0 0 0;
-		max-width: 900px;
-		font-size: 24px;
-		line-height: 2em;
-		letter-spacing: 1px;
+		max-width: 940px;
 	}
 
-	.nv-bio .social-links {
-		padding: 0;
-		text-align: center;
+	.hero .slide {
+		max-height: 360px;
+		width: 960px;
+		display: inline-block;
 	}
+
+	/*
+	News styles
+	*/
+
+	.main .main-content {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+
+	.main .news {
+		margin: 0 auto;
+		padding: 0 40px 0 0;
+		max-width: 620px;
+		display: inline-block;
+	}
+
+	.main .news h1 {
+		padding: 10px;
+		color:#000;
+		background-color: #ccc;
+	}
+
+	.main .news .entry {
+		margin: 30px 0 0 0;
+		line-height: 2em;
+	}
+
+	.main .news .entry h3 {
+		font-size: 20px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.main .news .entry .date {
+		font-size: 12px;
+	}
+
+	.main .right-bar {
+		margin: 0 auto;
+		margin-top: 20px;
+		max-width: 290px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.main .right-bar h2 {
+		text-decoration: underline;
+	}
+
+	.main .right-bar .item {
+		max-width: 145px;
+	}	
+
+	/*
+	Slick styles
+	*/
+
 
 	/*
 	Nav
 	*/
+	
+	.top-bar {
+
+	}
+
+	.top-bar .social {
+		margin: 0 auto;
+		padding: 10px 0 0 0;
+		height: 45px;
+		max-width: 960px;
+		text-align: right;
+		position: relative;
+	}
+
+	.top-bar .social .line {
+		bottom: 0;
+		height: 1px;
+		background-color: #aaa;
+		width: 100%;
+		position: absolute;
+	}
 
 	.nav {
 		margin: 0 auto;
 		padding: 20px 0 20px 0;
-		max-width: 960px;
 		position: relative;
+		max-width: 960px;
 	}
 
 	.nav .logo {
@@ -136,11 +193,20 @@
 	}
 
 	.nav .top-nav li {
-		margin-left: 1.5em;
+		margin-left: 25px;
+		margin-bottom: 10px;
 		display: inline-block;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 700;
 		letter-spacing: .15em;
+	}
+
+	/*
+	Footer
+	*/
+
+	footer {
+		height: 150px;
 	}
 
 
