@@ -9,6 +9,9 @@
 		background-image: url(../imgs/bg-texture.png);
 		color: #FFF;
 	}
+	html,body {
+		height: 100%;
+	}
 	ol, ul {
 		list-style: none;
 	}
@@ -57,21 +60,57 @@
 		height:1%;
 	}
 	a:link, a:visited {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
 		color:#ccc;
 		text-decoration: none;
 	}
 	a:hover {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
 		color: #a3030f;
+	}
+
+	.line {
+		height: 1px;
+		background-color: #aaa;
+		width: 100%;
+	}
+
+	a.divlink {
+		width: 100%;
+		height: 100%;
+		display: block;
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		background-color: rgba(255,255,255,0);
+	}
+
+	a.divlink:hover {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		background-color: rgba(255,255,255,0.5);
 	}
 
 	.content {
 		width:100%;
+		min-height: 100%;
 		font-family: 'Lato', Arial, sans-serif;
 		font-weight: 400;
+		position: relative;
 	}
 
 	.main {
 		width: 100%;
+		height: 100%;
 		background-color: #000;
 		padding-bottom: 30px;
 	}
@@ -108,25 +147,208 @@
 	}
 
 	.main .news h1 {
-		padding: 10px;
-		color:#000;
-		background-color: #ccc;
+		color:#FFF;
+		font-size: 40px;
+		letter-spacing: .25em;
 	}
 
 	.main .news .entry {
-		margin: 30px 0 0 0;
+		margin: 40px 0 30px 0;
 		line-height: 2em;
 	}
 
 	.main .news .entry h3 {
-		font-size: 20px;
+		font-size: 26px;
 		padding: 0;
 		margin: 0;
+	}
+
+	.main .news .entry p {
+		color: #ccc;
+		font-size: 16px;
 	}
 
 	.main .news .entry .date {
 		font-size: 12px;
 	}
+
+	/*
+	Artists Styles 
+	*/
+
+	.main .artists {
+		padding: 3px 0 20px 0;
+	}
+
+	.main .artists .artist {
+		margin-top: 50px;
+	}
+	
+	.main .artists .social {
+		margin-bottom: 20px;
+	}
+	
+	.main .artists .artist .nv {
+		height: 300px;
+		background-image: url(../imgs/img-nightverses.jpg);
+	}
+
+	/*
+	Night Verses Styles 
+	*/
+
+	.main .night-verses {
+		padding: 0;
+	}
+
+	.main .night-verses {
+	}
+	
+	.main .night-verses .social {
+		margin-bottom: 20px;
+	}
+	
+	.main .night-verses .nv {
+		width: 100%;
+		min-height: 400px;
+		background-image: url(../imgs/img-nightverses-home.jpg);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: top;
+	}
+
+	.info-container .bio,
+	.info-container .contact,
+	.info-container .tour-dates {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+	}
+
+	.info-container .bio {
+		max-width: 450px;
+		margin-bottom: 40px;
+	}
+
+	.info-container .contact,
+	.info-container .tour-dates {
+		max-width: 400px;
+	}
+
+	.info-container .bio p {
+		line-height: 1.5em;
+		color: #999;
+	}
+
+	.info-container .contact h4 {
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}	
+
+	.info-container .tour-dates th, td {
+		padding: 10px;
+		font-size: 12px;
+	}	
+
+	.info-container .tour-dates ul {
+		padding: 0;
+	}	
+
+	.info-container .tour-dates li {
+		margin-top: 10px;
+	}	
+
+	.info-container .tour-dates a.rsvp-btn {
+		border: 1px solid;
+		padding: 5px;
+	}
+
+	.info-container .videos .video {
+		margin: 10px 10px 10px 0;
+		display: inline-block;
+	}
+
+	.info-container .bio th, td {
+		padding: 5px;
+		font-size: 12px;
+	}
+
+	.info-container .bio .members {
+		margin-top: 20px;
+	}	
+
+	.info-container .releases .release {
+		margin: 10px 10px 10px 0;
+		display: inline-block;
+		height: auto;
+		width: auto;
+	}
+
+	.info-container .releases .release img:hover {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		opacity: 0.75;
+	}
+
+	.info-container .releases .release img {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		opacity: 1;
+	}
+
+	/*
+	Pager
+	*/
+
+	.pager {
+	  margin-left: 0;
+	  padding-left: 0;
+	  margin-bottom: 18px;
+	  list-style: none;
+	  text-align: center;
+	  *zoom: 1;
+	}
+	.pager:before,
+	.pager:after {
+	  display: table;
+	  content: "";
+	}
+	.pager:after {
+	  clear: both;
+	}
+	.pager li {
+	  display: inline;
+	}
+	.pager a {
+	  display: inline-block;
+	  padding: 5px 14px 8px 14px;
+	  background-color: #000;
+	}
+	.pager a:hover {
+	  text-decoration: none;
+	  background-color: #f5f5f5;
+	}
+	.pager .next a {
+	  float: right;
+	}
+	.pager .previous a {
+	  float: left;
+	}
+	.pager .disabled a,
+	.pager .disabled a:hover {
+	  color: #999999;
+	}
+
+	/*
+	Right Bar 
+	*/
 
 	.main .right-bar {
 		margin: 0 auto;
@@ -137,41 +359,35 @@
 	}
 
 	.main .right-bar h2 {
-		text-decoration: underline;
+		margin-bottom: 5px;
+	}
+
+	.main .right-bar .merch-items {
+		margin-top: 10px;
 	}
 
 	.main .right-bar .item {
-		max-width: 145px;
+		max-width: 140px;
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 10px;
+	}
+
+	.main .right-bar .item .band-name {
+		display: block;
+	}
+
+	.main .right-bar .item .name {
+		display: block;
+		font-size: 12px;
 	}	
-
-	/*
-	Slick styles
-	*/
-
 
 	/*
 	Nav
 	*/
 	
 	.top-bar {
-
-	}
-
-	.top-bar .social {
-		margin: 0 auto;
-		padding: 10px 0 0 0;
-		height: 45px;
-		max-width: 960px;
-		text-align: right;
 		position: relative;
-	}
-
-	.top-bar .social .line {
-		bottom: 0;
-		height: 1px;
-		background-color: #aaa;
-		width: 100%;
-		position: absolute;
 	}
 
 	.nav {
@@ -185,20 +401,64 @@
 		display: inline-block;
 	}
 
+	.nav .social {
+		margin-left: 66px;
+		display: inline-block;
+		position: absolute;
+		top: 80%;
+		transform: translateY(-80%);
+	}
+
+	.nav .social img {
+		margin-right: 5px;
+	}
+
 	.nav .top-nav {
 		display: inline-block;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 20%;
+		transform: translateY(-20%);
 	}
 
 	.nav .top-nav li {
 		margin-left: 25px;
 		margin-bottom: 10px;
 		display: inline-block;
-		font-size: 24px;
+		font-size: 55px;
 		font-weight: 700;
-		letter-spacing: .15em;
+	}
+
+	.nav .top-nav li a:link, 
+	.nav .top-nav li a:visited {
+		color: #fff;
+	}
+
+	.nav .top-nav li a:hover {
+		color: #a3030f;;
+	}
+
+	.nav .secondary {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.nav .secondary li {
+		margin-left: 25px;
+		margin-bottom: 10px;
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.nav .secondary li a:link, 
+	.nav .secondary li a:visited {
+		color: #aaa;
+	}
+
+	.nav .secondary li a:hover {
+		color: #a3030f;;
 	}
 
 	/*
@@ -206,7 +466,37 @@
 	*/
 
 	footer {
-		height: 150px;
+		width: 100%;
+		height: 200px;
+		background-color: #222;
+	}
+
+	footer h4 {
+		color: #ccc;
+	}
+
+	footer ul {
+		padding: 0;
+	}
+
+	footer li {
+		margin-bottom: 10px;
+		padding-right: 20px;
+	}
+
+	footer .sitemap,
+	footer .social,
+	footer .gn-family,
+	footer .contact {
+		margin-right: 25px;
+		max-width: 33%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	footer .container {
+		margin: 0 auto;
+		max-width: 960px;
 	}
 
 

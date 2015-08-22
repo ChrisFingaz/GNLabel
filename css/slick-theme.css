@@ -18,8 +18,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 90px;
     margin-top: -10px;
     padding: 0;
 
@@ -55,11 +55,14 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-size: 30px;
+    padding: 15px;
+    font-size: 50px;
     line-height: 1;
+    font-weight: bold;
 
     opacity: .75;
     color: white;
+    background-color: #000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -67,7 +70,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -20px;
+    z-index: 20;
 }
 [dir='rtl'] .slick-prev
 {
@@ -76,16 +80,16 @@
 }
 .slick-prev:before
 {
-    content: '<';
+    content: '\2329';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '>';
+    content: '\2329';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -20px;
 }
 [dir='rtl'] .slick-next
 {
@@ -94,11 +98,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: '\232A';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '<';
+    content: '\232A';
 }
 
 /* Dots */
