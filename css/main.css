@@ -75,7 +75,8 @@
 		color: #a3030f;
 	}
 
-	nav {
+	nav,
+	.header {
 		display: none;
 	}
 
